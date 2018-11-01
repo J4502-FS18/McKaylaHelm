@@ -35,8 +35,6 @@ h1 {
 	color: black;
 	font-family: 'Amatic SC',cursive, serif;
 	font-size: 5em;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
 }
 
 #container {
@@ -185,4 +183,67 @@ img {
         "b c d e"
         ". . . .";
   }
+}
+
+/*MENU*/
+
+nav ul li {
+    display: block;
+    border-top: 1px #79896d solid;
+}
+
+nav a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    background-color: #ffb3ff;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
+header h1 {
+    order: 2;
+		padding-top: 10px;
+    font-size: 1.5em;
+		font-family: 'Quicksand', Arial, sans-serif;
+}
+
+nav ul {
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
 }
